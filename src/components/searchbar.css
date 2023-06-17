@@ -1,0 +1,85 @@
+.search-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.search-bar {
+  position: relative;
+  width: 300px;
+}
+
+.auto {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.suggestions-container {
+  position: absolute;
+  top: calc(100% + 50px); /* Adjust the value as per your preference */
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(102, 16, 83, 0.698);
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.suggestions-list:hover {
+  background-color: #ebebeb;
+  color: black;
+}
+
+
+
+
+.suggestion-item {
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Add transition for background color change */
+}
+
+.suggestion-item:hover {
+  background-color: #ebebeb;
+}
+
+/* Other styles for suggestions, e.g., .sugg, .sugg:hover */
+
+
+
+.option select {
+  position: relative;
+  top: 23px;
+  right: 54px;
+  padding: 15px 0px;
+  padding-right: -1px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(53, 16, 102, 0.678);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+}
